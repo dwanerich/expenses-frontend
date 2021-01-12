@@ -2,13 +2,13 @@ import React from 'react';
 
 class App extends React.Component {
 
-  componentDidMount() {
-    fetch('http://localhost:3000/accounts', {
-      method: 'GET'
-    })
-    .then(r => r.json())
-    .then(data => console.log(data))
-  }
+  // componentDidMount() {
+  //   fetch('http://localhost:3000/accounts', {
+  //     method: 'GET'
+  //   })
+  //   .then(r => r.json())
+  //   .then(data => console.log(data))
+  // }
 
   render() {
     return (
