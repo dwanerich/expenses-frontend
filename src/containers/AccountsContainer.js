@@ -2,7 +2,7 @@ import React from 'react'
 import {fetchAccounts} from '../actions/fetchAccounts'
 import { connect } from 'react-redux'
 import Accounts from '../components/Accounts'
-import AccountInput from '../components/AccountInput'
+import AccountForm from '../components/AccountForm'
 
 
 class AccountsContainer extends React.Component {
@@ -16,7 +16,7 @@ class AccountsContainer extends React.Component {
         return (
             <div>
                 Accounts Container
-                <AccountInput />
+                <AccountForm />
                 <Accounts accounts={this.props.accounts}/>
 
             </div>
@@ -28,7 +28,6 @@ const mapStateToProps = (state) => {
     return {
         accounts: state.accounts
     }
-
 }
 
 export default connect(mapStateToProps, {fetchAccounts} )(AccountsContainer)
