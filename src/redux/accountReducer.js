@@ -1,6 +1,10 @@
 
-export default function accountReducer(state = { accounts: []}, action) {
-    return action.payload
-    // this was set up to see our action was coming in correctly + store could properly be updated by our reducer
+export default function accountReducer(state = {accounts: []}, action) {
+    switch(action.type) {
+        case 'FETCH_ACCOUNTS':
+        return {accounts: action.payload}
+        default:
+        return state
+    }
 }
         
