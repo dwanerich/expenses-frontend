@@ -15,7 +15,7 @@ class AccountsContainer extends React.Component {
     render() {
         return (
             <div>
-                Accounts Container
+                <h2>Accounts Container</h2>
                 <AccountForm />
                 <Accounts accounts={this.props.accounts}/>
 

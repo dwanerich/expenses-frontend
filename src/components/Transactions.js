@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Accounts = (props) => {
+const Transactions = (props) => {
 
     return (
         <div>
-            <h1>Accounts</h1>
+            <h1>Transactions</h1>
             {props.accounts.map(account => <li key={account.id}>{account.name} - {account.balance} <button>Send</button></li> )}
             
         </div>
     )
 }
 
-export default Accounts
+export default Transactions
